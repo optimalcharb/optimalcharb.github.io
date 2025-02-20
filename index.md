@@ -1,5 +1,6 @@
-Welcome
+---
+layout: home
+author_profile: true
+---
 
-<!-- [intro](intro.md) -->
-<!-- 
-[intro](intro) -->
+Welcome to my GitHub site!
