@@ -3,8 +3,7 @@ title: "Intro"
 categories:
   - Intro Data Science
 tags:
-  - data model
-  - optimization problem
+  - classification
 ---
 
 # What is a data model?
