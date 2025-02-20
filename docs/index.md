@@ -1,3 +1,3 @@
 Welcome
 
-[intro](intro/page)
+[intro](docs/intro/page)
