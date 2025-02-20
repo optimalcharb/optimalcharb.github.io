@@ -1,3 +1,12 @@
+---
+title: "Intro"
+categories:
+  - Intro Data Science
+tags:
+  - data model
+  - optimization problem
+---
+
 # What is a data model?
 
 *An introduction to my notation and perspective of data science*
