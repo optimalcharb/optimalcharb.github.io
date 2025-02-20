@@ -1,3 +1,3 @@
 Welcome
 
-[intro](pages/intro)
+[intro](intro/page)
