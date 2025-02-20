@@ -26,7 +26,7 @@ The input that changes to optimize the function, $x$, is called the **variable**
 $$ f^*=f(x^*)=\min_x f(x) \quad x^*=\arg\min_x f(x) $$
 
 A maximization problem is equivalent to a minimization problem where $f(x)$ is multiplied by $-1$. So going forward we only need to discuss minimization to cover all of "optimization".
-An optimization problem can also have parameters and constraints. **Parameters** are numbers that describe a problem. Values of parameters must be selected before a single solution $x^*$ is produced. The parameters are constant with respect to the input variables $x$ and can't be changed while $f$ is being minimized. **Constraints** are statements (equations, inequalities, or domain restrictions) that change what values of the input variables $x$ are possible. $x^*$ must satisfy the constraints so $x^*$ is not always the global minima of $f$.
+An optimization problem can also have parameters and constraints. **Parameters** are numbers that describe a problem. Values of parameters must be selected before a single solution is produced. The parameters are constant with respect to the input variables $x$ and can't be changed while $f$ is being minimized. **Constraints** are statements (equations, inequalities, or domain restrictions) that change what values of the input variables $x$ are possible. $x^*$ must satisfy the constraints so $x^*$ is not always the global minima of $f$.
 
 Here is an example of an optimization problem:
 
@@ -38,13 +38,13 @@ Let's look at another example. This is a **linear program** since the objective 
 
 Now $x = (x_1, x_2)$ represents two input variables that can be changed to change the value of $f$. To find the optimal solution for $x$, let's graph the feasible region.
 
-<img src="intro/graph1.png" alt="alt" width="400">
+<img src="intro-graph0.png" alt="alt" width="300">
 
 The optimal solution for $x$ must lie in the first quadrant below the line $y = 2x$. The region is **unbounded** since the boundary region allows for $x_1$ and $x_2$ to approach infinity. Is there still an optimal solution? If $a_1$ and $a_2$ are positive, $x_1$ and $x_2$ have to be as small as possible to minimize $f$. So the problem does have a single optimal solution $x = (0,0)$. If $a_1$ is negative, then $x_1$ is pushed to be as large as possible and approaches infinity. So the problem is unbounded and has no solution. What if $a_1$ is zero and $a_2$ is positive? Then $x_1$ can be any value and $x_2$ must be as small as possible. So every value on the half-line $x_1 > 0$, $x_2 = 0$ (the positive $x$-axis) is an optimal solution. In any linear program, one of these three cases must occur: exactly one optimal solution, no optimal solution, or infinitely many optimal solutions.
 
 The boundary region can become bounded by adding a third constraint, say $x_1 = 2$.
 
-<img src="intro/graph2.png" alt="alt" width="400">
+<img src="intro-graph1.png" alt="alt" width="300">
 
 Now the problem will always have at least one optimal solution. If $a_1$ and $a_2$ are positive, the optimal solution is still $(0,0)$. If $a_1$ and $a_2$ are negative, then $x_1$ and $x_2$ are as large as possible and the optimal solution is $(2,4)$. More formally, you could think about comparing the objective value at the three boundary points, $f(0,0)$, $f(2,0)$, $f(2,4)$, and the minimum equals the optimal value.
 
