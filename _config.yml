@@ -1,3 +1,5 @@
+include: ["index.md"]
+
 markdown: kramdown
 
 title: Charlie Bauer
