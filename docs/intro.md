@@ -8,17 +8,13 @@ I have studied data science at Georgia Tech for five years, tutored for four, an
 
 ## Optimization Problem
 
-![alt text](intro1.png)
-
-![alt text](intro2.png)
-
 The first definition to know is **optimization problem** — to maximize or minimize a function.
 
-$$\max_x f(x) \quad \min_x f(x)$$
+$$ \max_x f(x) \quad \min_x f(x) $$
 
 The input that changes to optimize the function, x, is called the **variable**. The function being optimized, f(x), is the **objective**. The result of an optimization problem is the **optimal value**, f*, and **optimal solution**, x*, a value of the variable that produces the optimal value. In math notation, f* equals the minimum and x* is the argument that minimizes f(x).
 
-$$f^*=f(x^*)=\min_x f(x) \quad x^*=\arg\min_x f(x)$$
+$$ f^*=f(x^*)=\min_x f(x) \quad x^*=\arg\min_x f(x) $$
 
 A maximization problem is equivalent to a minimization problem where f(x) is multiplied by -1. So going forward we only need to discuss minimization to cover all of "optimization".
 An optimization problem can also have parameters and constraints. **Parameters** are numbers that describe a problem. Values of parameters must be selected before a single solution x* is produced. The parameters are constant with respect to the input variables x and can't be changed while f is being minimized. **Constraints** are statements (equations, inequalities, or domain restrictions) that change what values of the input variables x are possible. x* must satisfy the constraints so x* is not always the global minima of f.
