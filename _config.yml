@@ -1,0 +1,8 @@
+markdown: kramdown
+
+title: Charlie Bauer
+description: personal website
+
+plugins:
+- jekyll-remote-theme
+remote_theme: pages-themes/slate@v0.2.0
