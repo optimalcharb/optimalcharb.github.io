@@ -21,7 +21,7 @@ An optimization problem can also have parameters and constraints. **Parameters**
 
 Here is an example of an optimization problem:
 
-There are three parameters, $a, b, c,$ that, when selected to have different values, can change the solution, $x^*$. The feasible region is the set of $x$ values that satisfy the constraints. For this problem, you could visualize the **feasible region** as the segment on the number line going from $0$ to $c^2$.
+There are three parameters, $ a, b, c, $ that, when selected to have different values, can change the solution, $x^*$. The feasible region is the set of $x$ values that satisfy the constraints. For this problem, you could visualize the **feasible region** as the segment on the number line going from $0$ to $c^2$.
 
 What is the solution to this optimization problem? Consider three cases: $a > 0$, $a = 0$, $a < 0$. When $a > 0$, the $x$ value in the feasible range $[0, c^2]$ that minimizes $ax + b$ is clearly $x = 0$. When $a = 0$, the objective always equals $b$ and every feasible value for $x$ is optimal. When $a < 0$, the $x$ that minimizes $ax + b$ in the range $[0,c^2]$ is clearly $x = c^2$.
 
