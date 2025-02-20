@@ -109,7 +109,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/optimalcharb/optimalcharb.github.io"
     - label: "Minimal Mistakes Theme"
-      icon: "fab fa-fw fa-code-fork"
+      icon: "fas fa-code-fork"
       url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
 
