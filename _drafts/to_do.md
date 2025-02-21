@@ -1,0 +1,5 @@
+- Logo and profile images
+- Giscus comments
+- Code copy button
+- Breadcrumbs
+- Google Analytics
