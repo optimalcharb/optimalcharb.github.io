@@ -1,11 +1,11 @@
 ---
 layout: single
-title: "Newsvendor"
-excerpt: ""
+title: "Newsvendor Problem"
+excerpt: "Fundamental probabilistic model for inventory and demand"
 categories:
   - Probabilistic-Models
 tags:
-  - classification
+  - stochastic
 toc: true
 toc_label: "Table of Contents"
 #  toc_icon: 
@@ -251,6 +251,10 @@ P^{(Y)}=
   5 & 0   & 0.3 & 0.5 & 0.2 & 0   & 0   \\
 \end{array}
 $$
+
+The Markov chain can also be visualized with a diagram:
+
+<img src="/assets/post-images/newsvendor-mc.png" alt="alt" width="400">
 
 The transition matrices can be used to calculate the steady-state distribution, probability of transitioning from $i$ to $j$ in multiple steps, expected number of steps to transition from $i$ to $j$, etc. If we find the steady-state distribution, then we can find the expected cost or profit per period. 
 
