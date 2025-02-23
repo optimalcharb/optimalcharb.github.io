@@ -4,6 +4,6 @@ permalink: /about/
 title: "About"
 ---
 
-## Welcome
+## Welcome 
 
-This site shares educational content and data science projects.
+This site shares educational content and data science projects. :rainbow:

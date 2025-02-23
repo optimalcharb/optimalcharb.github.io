@@ -88,7 +88,7 @@ analytics:
 author:
   name             : "Charlie Bauer"
   avatar           : /assets/site-images/avatar0.jpg
-  bio              : "NLP, LLMs, Dynamic Pricing, Demand Forecasting, Queue Theory"
+  bio              : "NLP, LLMs, Dynamic Pricing, Demand Forecasting, Stochastic Optimization"
   location         : "Georgia Tech"
   email            : 
   links:
