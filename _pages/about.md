@@ -6,4 +6,4 @@ title: "About"
 
 ## Welcome 
 
-This site shares educational content and data science projects. :rainbow:
+This site shares educational content and data science projects.
