@@ -16,7 +16,7 @@ toc_label: "Table of Contents"
 
 # The Newsvendor Problem
 
-The newsvendor model is a fundamental stochastic models used for inventory ordering and demand management. In the newsvendor problem, the decision-make must determine the order quantity $q$ to supply during a period of demand. The initial inventory is zero and the order quantity $q$ is chosen before knowing the actual demand. The optimal order quantity, $q$\*, is the one that maximizes profit or minimizes cost.
+The newsvendor model is a fundamental stochastic model used for inventory ordering and demand management. In the newsvendor problem, the decision-make must determine the order quantity $q$ to supply during a period of demand. The initial inventory is zero and the order quantity $q$ is chosen before knowing the actual demand. The optimal order quantity, $q$\*, is the one that maximizes profit or minimizes cost.
 
 Several key variables define the problem:
 - $ D $: random variable for demand with known distribution
@@ -254,7 +254,7 @@ $$
 
 The Markov chain can also be visualized with a diagram:
 
-<img src="/assets/post-images/newsvendor-mc.png" alt="alt" width="400">
+
 
 The transition matrices can be used to calculate the steady-state distribution, probability of transitioning from $i$ to $j$ in multiple steps, expected number of steps to transition from $i$ to $j$, etc. If we find the steady-state distribution, then we can find the expected cost or profit per period. 
 
