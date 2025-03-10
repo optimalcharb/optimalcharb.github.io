@@ -14,8 +14,6 @@ toc_label: "Table of Contents"
 #   teaser:
 ---
 
-# Single Variable Linear Regression
-
 ## Linear Model and Residual Assumption
 
 Single variable linear regression models a response variable $y$ as a linear function of a regressor variable $x$ plus a random component.
