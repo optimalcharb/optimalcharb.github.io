@@ -146,33 +146,31 @@ $$ f(x; \lambda) = \lambda e^{-\lambda x}, \quad x \geq 0 $$
 
 The loglikelihood function and derivative follow.
 
-$$l(\lambda) = \sum_{i=1}^{n} \log(\lambda e^{-\lambda x}) = n \log \lambda - \lambda \sum_{i=1}^n x_i$$
+$$l(\lambda) = \sum_{i=1}^{n} \log(\lambda e^{-\lambda x}) = n \log \lambda - \lambda \sum_{i=1}^n x_i$$ \\
 $$ \frac{dl}{d\lambda} = \frac{n}{\lambda} - \sum_{i=1}^{n} x_i $$
 
-The MLE has derivative equal to zero
-$$\frac{n}{\lambda} - \sum_{i=1}^{n} x_i = 0 $$
-$$ \hat{\lambda} = \frac{n}{\sum_{i=1}^{n} x_i} $$
+The MLE has derivative equal to zero \\
+$$\frac{n}{\lambda} - \sum_{i=1}^{n} x_i = 0 $$ \\
+$$ \hat{\lambda} = \frac{n}{\sum_{i=1}^{n} x_i} $$ \\
 
 ## Normal
 
 For a normal distribution with mean $\mu$ and variance $\sigma^2$, the pdf is
 $$ f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}} $$
 
-The likelihood is 
+The likelihood is \\
 $$ L(\mu, \sigma^2) = \prod_{i=1}^{n} \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x_i - \mu)^2}{2\sigma^2}} $$
 
-The loglikelihood is
+The loglikelihood is \\
 $$ l(\mu, \sigma^2) = -\frac{n}{2} \log(2\pi\sigma^2) - \frac{1}{2\sigma^2} \sum_{i=1}^{n} (x_i - \mu)^2 $$
 
-To find the MLEs, we take the partial derivatives of $l$ with respect to $\mu$ and $\sigma^2$ and set them equal to zero. For $\mu$
+To find the MLEs, we take the partial derivatives of $l$ with respect to $\mu$ and $\sigma^2$ and set them equal to zero. For $\mu$ \\
+$$ \frac{\partial l}{\partial \mu} = \frac{1}{\sigma^2} \sum_{i=1}^{n} (x_i - \mu) = 0 $$ \\
+$$ \hat{\mu} = \frac{1}{n} \sum_{i=1}^{n} x_i $$ \\
 
-$$ \frac{\partial l}{\partial \mu} = \frac{1}{\sigma^2} \sum_{i=1}^{n} (x_i - \mu) = 0 $$
-$$ \hat{\mu} = \frac{1}{n} \sum_{i=1}^{n} x_i $$
-
-For $\sigma^2$
-
-$$ \frac{\partial l}{\partial \sigma^2} = -\frac{n}{2\sigma^2} + \frac{1}{2\sigma^4} \sum_{i=1}^{n} (x_i - \mu)^2 = 0 $$
-$$ \hat{\sigma}^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \hat{\mu})^2 $$
+For $\sigma^2$ \\
+$$ \frac{\partial l}{\partial \sigma^2} = -\frac{n}{2\sigma^2} + \frac{1}{2\sigma^4} \sum_{i=1}^{n} (x_i - \mu)^2 = 0 $$ \\
+$$ \hat{\sigma}^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \hat{\mu})^2 $$ \\
 
 For Exponential and Normal, the maximum likelihood estimates are the same as the method of moments estimates.
 That's a good illustration of why method of moments is a good rule of thumb for simple distributions.
@@ -230,7 +228,7 @@ The Fisher Information quantifies the amount of information that an observable r
 Let $X=(X_1,X_2,...,X_N)$ be a vector of i.i.d. random variables, $T(X)$ be a transformation of $X$, and $x$ denote an outcome/value of $X$. Then $X_i$ has pmf/pdf $f(x_i;\theta)$ with parameter $\theta$ and $X$ has joint pmf/pdf $f(x;\theta) $ $=$ $f(x_1,x_2,...,x_n; \theta) $ $ =$ $\prod_{i=1}^n f(x_i; \theta)$. 
 An estimate for $\theta$ calculated from a data sample is not necessarily a sufficient statistic. However, any efficient estimate for $\theta$ must be a function of a sufficient statistic $T(X)$. Definition: $T(X)$ is a sufficient statistic if the probability distribution of $X$ given a value for $T(X)$ is constant with respect to $\theta$. In math notation, $f(x \| T(X)=T(x))$ is not a function of $\theta$. In other words, the statistic $T(X)$ provides as much information about $\theta$ as the entire data sample $X$.
 
-The Fisher-Neyman Factorization Theorem provides a shortcut to prove that a statistic is sufficient. The theorem states $T(X)$ is a sufficient statistic for $\theta$ if joint pmf/pdf $f(x; \theta)$ $=$ $g(T(x), \theta) h(x)$ for some $g$ that is a function of $T(X)$ and the parameters and some $h$ that is any function of $X$ and the parameters besides $\theta$. 
+The Fisher-Neyman Factorization Theorem provides a shortcut to prove that a statistic is sufficient. The theorem states $T(X)$ is a sufficient statistic for $\theta$ if joint pmf/pdf $f(x; \theta)$ $=$ $g(T(x), \theta) h(x)$ for some $g$ that is a function of $T(X)$ and the parameters and some $h$ that is any function of $X$ and the parameters besides $\theta$. In otherwords, $g$ is an expression with $x$ only inside $T(x)$ and $h$ is an expression without $\theta$.
 
 For example, let $X_1, X_2, ..., X_n \sim \text{Poisson} (\lambda)$. The maximum likelihood estimate for $\lambda$ is the sample mean $\frac{1}{n} \sum_{i=1}^n x_i$.
 This is a function of $T(x)$ $ =$ $\sum_{i=1}^n x_i$, which is a sufficient statistic for $\lambda$. The sufficiency can be shown by the definition or theorem.

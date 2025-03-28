@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Model Selection in Linear Regression"
+title: "Model Selection for Linear Regression"
 excerpt: ""
 categories:
   - Intro-Data-Science
@@ -14,7 +14,21 @@ toc_label: "Table of Contents"
 #   teaser:
 ---
 
-# Var
+# Train-Test Split
+The **train-test split** is a method used to evaluate the performance of a machine learning model. The dataset is divided into two subsets: the training set and the testing set. The model is trained on the training set and evaluated on the testing set.
+
+
+## Train-Test-Validate
+The **train-test-validate** approach involves splitting the dataset into three subsets: training, validation, and testing. The model is trained on the training set, tuned on the validation set, and evaluated on the testing set. The test data is reserved until after models are selected and compared. to provide an unseen dataset to test whether the model selection process and final model is accurate on unseen data
+
+
+## Cross-fold Validation
+**Cross-fold validation** (also called $k$-folds or CV) is a technique where the dataset is divided into $k$ subsets. The model is trained and evaluated \( k \) times, each time using a different fold as the testing set and the remaining folds as the training set. The final performance is the average of the \( k \) evaluations.
+
+
+## 
+
+# Variable Selection
 
 ## Forward Selection
 

@@ -39,7 +39,7 @@ class LinearRegression(Regression):
 
     def predict(self, X: np.array) -> np.array:
         self.check_num_features(X)
-        X_b = np.c_[np.ones((X.shape[0], 1)), X]
+        X_b = self.add_bias(X)
         return X_b @ self.coefficients
 
     def fit(self, X: np.array, y: np.array):
@@ -168,8 +168,13 @@ class LogisticRegression(Classification):
         self.beta = np.zeros((self.num_features + 1, self.num_classes))
         self.loss_history = self.accuracy_history = []
         for _ in range(epochs):
-            probs = self.softmax(X_b @ self.beta)
-            grad = -X_b.T @ (y_enc - probs) / X_b.shape[0]
+            if sgd:
+                i = np.random.randint(X_b.shape[0])
+                probs = self.softmax(X_b[i:i+1] @ self.beta)
+                grad = -X_b[i:i+1].T @ (y_enc[i:i+1] - probs)
+            else:
+                probs = self.softmax(X_b @ self.beta)
+                grad = -X_b.T @ (y_enc - probs) / X_b.shape[0]
             self.beta -= learning_rate * grad
             self.loss_history.append(self.loss(probs, y_enc))
             self.accuracy_history.append(accuracy(y, self.predict(X)))

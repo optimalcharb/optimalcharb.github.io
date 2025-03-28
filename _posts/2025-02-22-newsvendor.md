@@ -87,6 +87,7 @@ If the quantity ordered is also continuous, like 3.42 gallons, then there is a p
 
 $$F(q^*)=\frac{c_s-c_p}{c_s+c_h}$$
 
+To prove the critical ratio is the same, you would set the derivative of the cost function equal to zero; however, computing this derivative will require Leibniz's Rule.
 
 ## Example
 
